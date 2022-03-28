@@ -1,0 +1,88 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+* {padding:0; margin:0;}
+li {list-style: none;}
+a {text-decoration:none; display:block; color:black; font-family: 'Noto Sans KR', sans-serif;}
+header, section, footer {width:100%; float:left;}
+header, section, footer, div {box-sizing: border-box;}
+body {font-size:16px; font-family: 'Noto Sans KR', sans-serif;}
+img {width:100%;}
+.box {width:1300px; margin:0 auto;}
+header {height:130px; float:left;}
+header .up_menu {height:40px; width:100%; background-color:black;}
+header .up_menu .up_left {float:left;}
+header .up_menu .up_left ul li {float:left;}
+header .up_menu .up_right {float:right;}
+header .up_menu .up_right ul li {float:left;}
+header .up_menu .box p {text-align:center; padding:10px 15px; font-size:14px; color:#fff;}
+header .up_menu .box .up_left a {padding:0 15px; border-right: 1px solid #000;margin-top:5px; height:24px;}
+header .up_menu .box .up_left ul li:last-child a {border:none;}
+header .up_menu .box .up_right a {padding:7px 25px;}
+header .down_menu .logo {width:110px; margin-left:600px; margin-top:10px; position:absolute;}
+header .down_menu nav {float:left; z-index: 10; position:relative; margin-top:35px;}
+header .down_menu nav > ul > li {float:left;}
+header .down_menu nav > ul > li > a {position:relative; padding:10px 10px; margin-right:50px; padding-bottom:20px; font-size:18px; font-weight: bold; display:inline-block;}
+header .down_menu nav > ul > li:nth-child(4) {margin-right: 140px;}
+header .down_menu nav > ul > li:first-child {margin-left: 70px;}
+header .down_menu nav > ul > li > a:after {position:absolute; content:""; width:0; height:2px; background-color: black; left:50%; bottom:5px; transition:all 0.5s;}
+header .down_menu nav > ul > li > a:hover:after {width:100%; left:0;}
+header .down_menu nav ul li .sub {background-color: white; opacity:0; visibility:hidden; transition:all 0.5s; width:130px;}
+header .down_menu nav ul li .sub a {padding:10px; font-size:16px; border-bottom: 1px solid #ddd;}
+header .down_menu nav ul li .sub a:hover {background-color: #efefef;}
+header .down_menu nav ul li:hover .sub {opacity:1; visibility: visible;}
+section .visual {background-image: url(../img/visual1.jpg); width:1920px; height: 570px; margin:0 auto; margin-top: 40px; z-index:0; position:relative;}
+section .banner {width:1920px; height:560px; background-color: rgb(185, 185, 185); margin:0 auto;}
+section .banner .video {padding-top: 80px; float:left;}
+section .banner_right {float:left; width:630px; height:380px; margin-top:80px; margin-left: 40px;}
+section .banner_right ul li {width:300px; height:180px; float:left;  background-size: cover;}
+section .banner_right ul li a {text-align: center; padding-top:130px;}
+section .banner_right ul li:last-child a {padding-top:150px;}
+section .banner_right ul li:hover {box-shadow: 0 0 15px rgb(95, 95, 95);}
+section .banner_right ul li:first-child {background-image: url(../img/banner1.jpg); background-position: center; margin-right:30px; margin-bottom:40px;}
+section .banner_right ul li:nth-child(2) {background-image: url(../img/banner2.jpg); background-position: center; margin-bottom:40px;}
+section .banner_right ul li:nth-child(3) {background-image: url(../img/banner3.jpg); background-position: center; margin-right:30px;}
+section .banner_right ul li:last-child {background-image: url(../img/banner4.jpg); background-position: center;}
+section .second_banner {background-image: url(../img/background.jpg); width:1920px; height:630px; background-repeat: no-repeat; margin:0 auto; background-attachment: fixed; background-position: center; background-size: cover;}
+section .second_banner .box .head {margin-left:450px; padding-top:60px; float:left;}
+section .second_banner .box .head img {width:70px; float:left; margin-top:10px;}
+section .second_banner .box .head h1 {float:left; font-size:60px; margin-left:30px; color:#fff;}
+section .second_banner .box .list {float:left;}
+section .second_banner .box .list ul li {width:200px; height:200px; float:left; margin-right:75px; margin-top:130px; border-radius:100%; background-color: #fff;}
+section .second_banner .box .list ul li p {color:#fff; margin-top:18px; margin-left:45px; font-size: 32px;}
+section .second_banner .box .list ul li:first-child p {margin-left:70px;}
+section .second_banner .box .list ul li:last-child p {margin-left:10px;}
+section .second_banner .box .list ul li:last-child {margin-right:0;}
+section .second_banner .box .list ul li:hover img {transform: scale(1.2, 1.2);}
+section .third_banner {width:1920px; height:850px; margin:0 auto;}
+section .third_banner .box .main_maison {margin:0 auto; text-align: center; margin-top:90px; font-size: 30px;}
+section .third_banner .box .left_maison img {width:350px; float:right; margin:0 auto; margin-top:-200px; margin-right:25px;}
+section .third_banner .box .left_maison {width:785px; height:650px; background-color: bisque; margin-top:20px; float:left;}
+section .third_banner .box .left_maison h2 {margin-top: 80px; margin-left:40px; font-size: 35px;;}
+section .third_banner .box .left_maison h4 {margin-left:90px; font-size:25px;}
+section .third_banner .box .left_maison h1 {margin-left:80px; font-size:40px;}
+section .third_banner .box .left_maison p {margin-top: 200px; font-size: 35px; margin-left:200px; padding:10px;}
+section .third_banner .box .right_maison .up {background-image: url(../img/maison2.png); width:450px; height:310px; background-repeat: no-repeat;}
+section .third_banner .box .right_maison .down {background-image: url(../img/maison3.png); width:450px; height:310px; background-repeat: no-repeat; margin-top:30px;}
+section .third_banner .box .right_maison {float:left; margin-top:20px; margin-left: 30px;}
+section .third_banner .box .right_maison .up h1 {float:left; margin-top: 160px; margin-left: 240px; text-align: right;}
+section .third_banner .box .right_maison .down h1 {padding-top:190px; padding-left:10px; color: #fff;}
+section .last_banner {width:1920px; height:450px; margin:0 auto;}
+section .last_banner .sns {width:650px; float:left;}
+section .last_banner .sns img {width:100px; position:relative; float:right; z-index: 0;}
+section .last_banner .sns h1 {font-size:50px; margin-left: 20px; padding-bottom: 20px; position:absolute;}
+section .last_banner .sns .sns_sub {margin-top:120px; margin-left:20px; line-height: 70px;}
+section .last_banner .sns .sns_sub a {border-bottom: 2px solid #000; font-size:17px;}
+section .last_banner .sns .sns_sub p {float:right; margin-top:-70px;}
+section .last_banner .sns .sns_sub {border-top:2px solid rgb(141, 141, 141);}
+section .last_banner .map {width:650px; float:left; }
+section .last_banner .map img {width:100px; position:relative; float:right;}
+section .last_banner .map h1 {font-size:50px; margin-left: 50px; padding-bottom: 20px; position:absolute;}
+section .last_banner .map .map_img{background-image: url(../img/map.png); width: 600px; height:250px;background-repeat: no-repeat; margin:20px 50px;  margin-top: 120px; border-top:2px solid rgb(141, 141, 141);}
+footer .footer_box {margin:0 auto; width:1920px; height: 150px; background-color: #ddd;}
+footer > .footer_box > .box > img {width:100px; float:left; margin:25px; margin-right:40px;}
+footer .footer_box .box .detail ul li {float:left; padding-right:15px; margin-top: 25px;}
+footer .footer_box .box .detail ul li a {border-right:1px solid rgb(85, 85, 85); padding-right:15px; font-size: 23px;}
+footer .footer_box .box .detail ul li:last-child a {border-right:none;}
+footer .footer_box .box address {float:left; margin-top:10px;}
+footer .footer_box .box address p {font-size: 20px; color:rgb(100, 100, 100)}
+footer .footer_box .box .friends {width:300px; float:right; }
+footer .footer_box .box .friends img {float:left; width:50px;  margin-left:15px; margin-top:-10px;}
